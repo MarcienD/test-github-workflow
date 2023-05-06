@@ -1,1 +1,12 @@
-run: python -V
+name: demo
+on: [push]
+jobs: 
+  show-python-version:
+    runs-on: ubuntu-lates    
+    steps:
+      - run: python -V
+  test-pylint:
+    runs-on: ubuntu-lates
+    steps: 
+      - run: py.test --pylint
+  
