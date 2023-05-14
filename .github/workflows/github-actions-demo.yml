@@ -1,8 +1,8 @@
 name: demo
 on: [push]
 jobs: 
-  show-python-version:
-    runs-on: ubuntu-lates    
+  runs-on: ubuntu-latest 
+  show-python-version:   
     steps:
       - run: python -V
   test-pylint:
