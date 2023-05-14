@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Show-python-version
-     - run: python -V
+       run: python -V
 
      
      
