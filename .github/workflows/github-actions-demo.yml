@@ -6,7 +6,13 @@ jobs:
     steps:
      - name: Show-python-version
        run: python -V
-
      
-     
-  
+  test_pylint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code_checkout
+        run: actions/checkout@2
+      - name: pip_install_dependiences
+        run: pip install -r requirements.txt
+      - name: Run Pylint
+        run: pylint app.py
