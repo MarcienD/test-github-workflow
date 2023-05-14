@@ -10,9 +10,11 @@ jobs:
   test_pylint:
     runs-on: ubuntu-latest
     steps:
-      - name: code_checkout
+      - name: Code checkout
         uses: actions/checkout@v2
       - name: pip_install_dependiences
         run: pip install -r requirements.txt
+      - name: Install Pylint
+        run: pip install pylint
       - name: Run Pylint
         run: pylint app.py
