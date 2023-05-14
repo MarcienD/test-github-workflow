@@ -1,12 +1,12 @@
 name: demo
 on: [push]
 jobs: 
-  runs-on: ubuntu-latest 
-  show-python-version:   
+  show_python_version: 
     steps:
-      - run: python -V
-  test-pylint:
-    runs-on: ubuntu-lates
-    steps: 
-      - run: py.test --pylint
+     - name: Show-python-version
+     - run: python -V
+   ##- name: test-pylint
+     ## runs-on: ubuntu-lates
+      ##steps: 
+       ##- run: py.test --pylint
   
