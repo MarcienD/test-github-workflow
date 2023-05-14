@@ -1,3 +1,6 @@
+'''
+Aplikacja Flask, wyświetlająca powitanie użytkownika 
+'''
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')
